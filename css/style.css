@@ -1,0 +1,454 @@
+/*
+
+overflow: hidden;
+background-color: #333;
+position: fixed; Set the navbar to fixed position
+top: 0;  Position the navbar at the top of the page
+width: 100%;
+
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background: #C0D8C0; */
+}
+
+.home, .club, .rlt{
+    background-color: #C0D8C0;
+    /* padding-top: 120px; */
+}
+
+
+.logo{
+  margin-right: 280px;
+  margin-top: 4px;
+  /* height: 112px;
+  width: 402px; */
+}
+
+body{
+  /*background-image: url("images/DPS Icon.png");
+  background-size: cover;  */
+  /* background-color: #C0D8C0; */
+  /* background-position: center; */
+  font-family: sans-serif;
+  padding-top: 120px;
+}
+.Navbar{
+  background: green;
+  text-align: center;
+  border-right: 1 px solid #ffffff;
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* margin-right: 160px; */
+}
+.Navbar ul{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.Navbar ul li{
+  padding: 15px;
+  margin: 15px;
+  width: 120px;
+}
+.Navbar ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.active, .Navbar ul li:hover{
+  background: #2bab0d;
+  border-radius: 3px;
+}
+
+.Navbar .fas{
+  margin-right: 8px;
+}
+
+.submenu-1{
+  display: none;
+}
+
+.Navbar ul li:hover .submenu-1{
+  display: block;
+  position: absolute;
+  background: rgb(0,100,0);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.Navbar ul li:hover .submenu-1 ul{
+  display: block;
+  margin: 10px;
+}
+
+.Navbar ul li:hover .submenu-1 ul li{
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.Navbar ul li:hover .submenu-1 ul li:last-child{
+  border-bottom: none;
+}
+
+.Navbar ul li:hover .submenu-1 ul li a:hover{
+  color: #b2ff00;
+}
+
+.fa-angle-right{
+  float: right;
+}
+
+.submenu-2{
+  display: none;
+}
+
+.hover-me:hover .submenu-2{
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: rgb(0,100,0);
+}
+
+.event{
+  padding: 32px;
+}
+
+
+.club{
+  padding: 32px;
+}
+
+
+.Adio{
+  padding: 32px;
+  margin-top: 112px;
+}
+
+.tt{
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left: 8px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px lightblue;
+  }
+
+  .tt thead tr{
+    background-color: #003f98;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .tt th, .tt td{
+    padding: 12px 15px;
+
+  }
+
+  .tt tbody tr{
+  border-bottom: 1px solid #dddddd;
+  }
+
+  .tt tbody tr:nth-of-type(even){
+    background-color: #f3f3f3;
+  }
+
+  .tt tbody tr:last-of-type{
+    border-bottom: 2px solid #003f98;
+  }
+
+  .tt tbody tr:hover{
+    font-weight: bold;
+    color: #003f98;
+  }
+
+.rslt{
+ margin-left: 8px;
+}
+
+.crs{
+ margin-left: 8px;
+}
+
+.kinder{
+ margin-left: 8px;
+}
+
+.kindr{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: 8px;
+}
+
+.kindr thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.kindr th, .kindr td{
+  padding: 12px 15px;
+
+}
+
+.kindr tbody tr{
+border-bottom: 1px solid #dddddd;
+}
+
+.kindr tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.kindr tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+
+.kindr tbody tr:hover{
+  font-weight: bold;
+  color: #009879;
+}
+
+.mdsh{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 600px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 8px;
+  }
+
+.mdsh thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.mdsh th, .mdsh td{
+  padding: 12px 15px;
+
+}
+
+.mdsh tbody tr{
+border-bottom: 1px solid #dddddd;
+}
+
+.mdsh tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.mdsh tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+
+.mdsh tbody tr:hover{
+  font-weight: bold;
+  color: #009879;
+}
+
+.hgsh{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 600px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: 8px;
+}
+
+.hgsh thead tr{
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.hgsh th, .hgsh td{
+  padding: 12px 15px;
+
+}
+
+.hgsh tbody tr{
+border-bottom: 1px solid #dddddd;
+}
+
+.hgsh tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.hgsh tbody tr:last-of-type{
+  border-bottom: 2px solid #009879;
+}
+
+.hgsh tbody tr:hover{
+  font-weight: bold;
+  color: #009879;
+}
+
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: midnightblue;
+}
+
+aside < p {
+    margin: .5rem;
+}
+
+p {
+    font-family: 'Comic Sans', sans-serif;
+    padding: 8px;
+}
+
+h2{
+  padding: 8px;
+  color: darkgreen;
+}
+
+.dept{
+border-collapse: collapse;
+margin: 25px 0;
+font-size: 0.9em;
+min-width: 600px;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+margin-left: 8px;
+}
+
+.dept thead tr{
+background-color: #b1b324;
+color: #ffffff;
+text-align: left;
+font-weight: bold;
+}
+
+.dept th, .dept td{
+padding: 12px 15px;
+
+}
+
+.dept tbody tr{
+border-bottom: 1px solid #dddddd;
+}
+
+.dept tbody tr:nth-of-type(even){
+background-color: #f3f3f3;
+}
+
+.dept tbody tr:last-of-type{
+border-bottom: 2px solid #b1b324;
+}
+
+.dept tbody tr:hover{
+font-weight: bold;
+color: #b1b324;
+}
+
+.fac{
+border-collapse: collapse;
+margin: 25px 0;
+margin-left: 16px;
+font-size: 0.9em;
+min-width: 600px;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.fac thead tr{
+background-color: red;
+color: #ffffff;
+text-align: left;
+font-weight: bold;
+}
+
+.fac th, .fac td{
+padding: 12px 15px;
+
+}
+
+.fac tbody tr{
+border-bottom: 1px solid #dddddd;
+}
+
+.fac tbody tr:nth-of-type(even){
+background-color: #f3f3f3;
+}
+
+.fac tbody tr:last-of-type{
+border-bottom: 2px solid red;
+}
+
+.fac tbody tr:hover{
+font-weight: bold;
+color: red;
+}
+
+.jee_bsc{
+  border: 1.5px solid black;
+  padding: 24px;
+  min-width: 960px;
+  border-collapse: collapse;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.jee_bsc td, tr, th{
+  border: 1px solid black;
+  padding: 8px;
+  /* min-width: 840px; */
+  /* border-collapse: collapse; */
+}
+
+.jee_scr td, tr, th{
+  border: 1px solid black;
+  padding: 8px;
+  /* min-width: 840px; */
+  /* border-collapse: collapse; */
+}
+
+
+.jee_scr{
+  border: 1.5px solid black;
+  padding: 24px;
+  min-width: 960px;
+  border-collapse: collapse;
+  margin-left: 32px;
+  margin-bottom: 8px;
+}
+
+.reslt tr, td, th{
+  padding: 8px;
+}
+
+.reslt{
+  margin-left: 48px;
+  margin-top: 32px;
+}
